@@ -77,7 +77,7 @@ function initAOSResponsive() {
                 // Let's get the value of the attribute
                 // and substituite it to the data-aos-* attribute
                 let value = $(this).data(breakpoint + '-' + attribute)
-                $(this).data(attribute, value)
+                $(this).attr('data-' + attribute, value)
             })
         }
     }
@@ -125,7 +125,12 @@ const init = function init(conf) {
     initAOSResponsive()
 
     // Finally, we can initiate the AOS
-    AOS.init(conf)
+    // This is a workaround because initiating AOS
+    // directly didn't use the overrided properties
+    // but wrapping it around a setTimeout worked correctly
+    setTimeout(() => {
+        AOS.init(conf)
+    }, 1)
 }
 
 export default {
