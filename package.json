@@ -2,6 +2,7 @@
   "name": "@dartmoon/aos-responsive",
   "version": "1.0.0",
   "description": "Animate on scroll made responsive",
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dartmoon-io/aos-responsive.git"
@@ -21,13 +22,6 @@
     "url": "https://github.com/dartmoon-io/aos-responsive/issues"
   },
   "homepage": "https://github.com/dartmoon-io/aos-responsive#readme",
-  "files": [
-    "dist",
-    "src"
-  ],
-  "devDependencies": {
-    "laravel-mix": "^6.0.27"
-  },
   "dependencies": {
     "aos": "^3.0.0-beta.6"
   }
