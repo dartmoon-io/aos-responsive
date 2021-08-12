@@ -1,7 +1,7 @@
 # AOS Responsive
 Make [Animate On Scroll](https://michalsnik.github.io/aos/) responsive! With this module you can ovveride the attributes of AOS as you would do it in CSS.
 
-The module is mobile-first, so you can only override.
+This package use mobile first. This means that normal `data-aos-*` attributes are valid from mobile devices to larger once and you can ovveride them using breakpoints.
 
 ### Installation
 
@@ -16,7 +16,7 @@ npm i @dartmoon/aos-responsive --save
 ```
 
 ### Usage
-How to use it? Exactly like you would with the standard AOS library!
+How to use it? Exactly like you would do with the standard AOS library!
 
 ```js
 import AOS from '@dartmoon/aos-responsive'
@@ -98,7 +98,7 @@ AOS.init({
 })
 ```
 
-Now only `data-aos` will be checked against the breakpoint overrides.
+Now, only `data-aos` will be checked against the breakpoint overrides.
 
 Just to be clear:
 
