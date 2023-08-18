@@ -1,7 +1,7 @@
 # AOS Responsive
 Make [Animate On Scroll](https://michalsnik.github.io/aos/) responsive! With this module you can ovveride the attributes of AOS as you would do it in CSS.
 
-This package use mobile first. This means that normal `data-aos-*` attributes are valid from mobile devices to larger once and you can ovveride them using breakpoints.
+This package uses mobile first. This means that normal `data-aos-*` attributes are valid from mobile devices to larger ones and you can ovveride them using breakpoints.
 
 ### Installation
 
@@ -34,7 +34,7 @@ Simply put a breakpoint name before the attribute.
 <div data-aos="fade-up" data-md-aos="fade-right">...</div>
 ```
 
-So now on mobile will get the beautiful `fade-up` animation, while starting from the `md` breakpoint you will have `fade-right`.
+So now on mobile we will get the beautiful `fade-up` animation, while starting from the `md` breakpoint you will have `fade-right`.
 
 ### Default breakpoints
 Breakpoints have been inspired by [Tailwind CSS](https://tailwindcss.com/docs/breakpoints).
@@ -109,3 +109,7 @@ Just to be clear:
 <!-- This will NOT work -->
 <div data-aos="fade-up" data-aos-duration="1200" data-md-aos-duration="900">...</div>
 ```
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE.md file for details
