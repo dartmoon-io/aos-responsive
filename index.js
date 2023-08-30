@@ -111,7 +111,7 @@ const init = function init(conf) {
     // If breakpoints is present into conf
     // merge them from conf, then remove them from conf
     if ('breakpoints' in conf) {
-        setBreakpoints(conf.screen)
+        setBreakpoints(conf.breakpoints)
         delete conf.breakpoints
     }
 
